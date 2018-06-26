@@ -33,13 +33,13 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:8010/eureka/
+      defaultZone: http://discovery:password123@localhost:8010/eureka/
 
 #忽略权限拦截
 management:
   security:
     enabled: false
-# security 加密
+# security 加密,用户认证
 security:
   basic:
     enabled: true
